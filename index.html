@@ -11,7 +11,7 @@
     <title>KUGOO</title>
 </head>
 <body>
-    <div class="flex container mx-auto justify-between items-center mt-5 px-30 max-lg:px-20 max-md:px-10 pb-5">
+    <div class="flex container mx-auto justify-between items-center mt-5 px-30 max-lg:px-20 max-md:px-10 pb-5 max-sm:px-5">
         <ul class="flex gap-10 items-center *:hover:text-gray-500 max-lg:text-[10px]">
             <li><a href="#">Сервис</a></li>
             <li><a href="#">Сотрудничество</a></li>
@@ -30,7 +30,7 @@
         </div>
     </div>
     <hr/>
-    <header class="flex container mx-auto items-center justify-between px-30 max-lg:px-20 max-md:px-10 mt-10">
+    <header class="flex container mx-auto items-center justify-between px-30 max-lg:px-20 max-md:px-10 mt-10 max-sm:px-5 max-sm:mt-5">
         <div class="flex items-center gap-10">
             <h1 class="text-5xl max-2xl:text-4xl font-bold max-md:text-3xl max-sm:text-2xl">KUGOO</h1>
             <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-lg max-xl:hidden"><i class="fa-solid fa-bars-staggered mr-2"></i> Каталог</button>
@@ -58,7 +58,7 @@
         </div>
         <button id="barbtn" class="hidden cursor-pointer max-lg:flex"><i class="fas fa-bars fa-xl max-sm:fa-md"></i></button>
     </header>
-    <div class="mx-30 max-xl:mx-20 max-md:mx-10 max-sm:mx-10 my-5">
+    <div class="mx-30 max-xl:mx-20 max-md:mx-10 max-sm:mx-5 my-3">
         <div class="max-md:flex hidden mx-auto items-center border border-blue-500 rounded-md overflow-hidden  h-11.5 max-md:h-9 pl-1 w-full mx-30 ">
             <select class="bg-gray-100 p-2 px-3 rounded-lg outline-none max-w-25 cursor-pointer max-xl:hidden">
                 <option selected>
@@ -76,7 +76,7 @@
         </div>
     </div>
     
-    <ul id="toolbar" class="hidden container items-center gap-1 px-30 max-lg:px-0 mt-10 bg-[#F4F7FB] py-3 *:font-semibold *:cursor-pointer mx-auto max-lg:flex-col max-lg:absolute right-10 top-30 max-lg:w-90 max-lg:p-5 max-lg:rounded-2xl  *:w-full max-lg:*:p-5 max-lg:*:rounded-xl max-md:w-50 max-md:*:py-2">
+    <ul id="toolbar" class="hidden container items-center gap-1 px-30 max-lg:px-0 mt-10 bg-[#F4F7FB] py-3 *:font-semibold *:cursor-pointer mx-auto max-lg:flex-col max-lg:absolute left-0 top-3 max-lg:w-90 max-lg:p-5 max-lg:rounded-xl  *:w-full max-lg:*:p-5 max-lg:*:rounded-xl max-md:w-70 max-md:*:py-2">
         <li>О магазине</li>
         <li>Доставка
             <span class="bg-blue-600 text-white text-sm font-thin rounded-xl p-0.5 ">Доступна рассрочка</span>
@@ -89,7 +89,7 @@
     </ul>
 
     <main>
-        <section class="bg-[#6F73EE] container flex max-lg:flex-col justify-between px-30 max-lg:px-20 max-md:px-10 py-10 mx-auto rounded-2xl my-10">
+        <section class="bg-[#6F73EE] container flex max-lg:flex-col justify-between px-30 max-lg:px-20 max-md:px-10 py-10 max-sm:px-5 max-sm:my-7 mx-auto rounded-2xl max-sm:rounded-xl my-10">
             <div class="max-xl:max-w-150 max-lg:max-w-[800px]">
                 <button class="border border-white text-white py-1 px-2 rounded-md max-md:text-sm">Новинка</button>
                 <h1 class="text-[52px] pt-5 font-bold text-white max-w-[800px] max-2xl:text-[45px] max-xl:text-[35px] max-md:text-[30px] max-sm:text-[22px] ">Электросамокаты Kugoo Kirin от официального дилера</h1>
@@ -106,7 +106,7 @@
             </div>
         </section>
 
-        <section class="flex container max-xl:flex-wrap gap-10 justify-between mx-auto px-30 max-lg:px-20 ">
+        <section class="flex container max-xl:flex-wrap gap-10 justify-between mx-auto px-30 max-lg:px-20 max-md:px-10 max-sm:px-5">
             <ul>
                 <li class="text-3xl font-semibold pb-2 max-xl:text-2xl max-md:text-xl">Гарантия 1 год</li>
                 <li class="max-sm:text-sm">на весь ассортимент</li>
@@ -122,8 +122,8 @@
             <img src="./src/images/yandex.svg" alt="">
         </section>
 
-        <section class="px-30 max-xl:px-20 max-lg:px-10 container mx-auto flex justify-between my-20 max-xl:flex-col">
-            <h2 class="text-5xl font-semibold max-2xl:text-4xl max-xl:pb-5 max-lg:text-3xl max-md:pb-0">Электросамокаты</h2>
+        <section class="px-30 max-xl:px-20 max-lg:px-10 max-md:px-7 max-sm:my-10 max-sm:px-5 container mx-auto flex justify-between my-20 max-xl:flex-col">
+            <h2 class="text-5xl font-semibold max-2xl:text-4xl max-xl:pb-5 max-lg:text-3xl max-md:pb-0">Электросамокаты:</h2>
             <ul class="flex max-md:hidden *:border-1 *:border-transparent *:hover:border-blue-500 *:bg-[#F4F7FB] *:hover:bg-white  *:hover:text-blue-500 *:rounded-lg *:py-2 *:px-4 *:opacity-70 gap-5 max-2xl:text-sm max-2xl:py-1 max-2xl:px-2">
                 <li><button>Хиты продаж</button></li>
                 <li><button>Для города</button></li>
@@ -132,9 +132,44 @@
             </ul>
         </section>
 
-        <section class="px-30 max-xl:px-20 max-lg:px-10 container mx-auto mb-10">
-            <div  data-id="12345" class="flex gap-10 justify-around flex-wrap ">
-                <div id="product-1" class="product  w-70 h-[520px]  rounded-xl border border-[#EAEBED] hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
+        <section class="container mx-auto px-30 my-10 max-2xl:px-20 max-lg:px-10 max-md:px-7 max-sm:px-5">
+            
+          <form id="product-form" class="space-y-4 mt-6 bg-[#f4f5f0] p-10 rounded-3xl max-lg:rounded-2xl ">
+            <h1 class="text-center text-4xl font-semibold max-xl:text-3xl max-md:text-2xl">Adding product</h1>
+            <div class="space-y-2">
+              <label for="id" class="text-2xl max-lg:text-xl max-md:text-sm ">Skuter id sini</label>
+              <input id="id"  type="text" name="id" class="w-full px-3 py-2 max-md:py-1 border border-black rounded-2xl" required>
+            </div>
+            <div class="space-y-2">
+              <label for="nom" class="text-2xl max-lg:text-xl max-md:text-sm ">Skuter nomini</label>
+              <input id="nom" name="nom" type="text" class="w-full px-3 py-2 max-md:py-1 border border-bla2xl  rounded-2xl" required>
+            </div>
+            <div class="space-y-2">
+              <label for="battery" class="text-2xl max-lg:text-xl max-md:text-sm ">Battareya quvvati</label>
+              <input id="battery" name="battery" type="text" placeholder="masalan : 2000 mAh" class=" w-full px-3 py-2 max-md:py-1 bg-transparent border border-bla2xl rounded-2xl" required>
+            </div>
+            <div class="space-y-2">
+              <label for="tezlik" class="text-2xl max-lg:text-xl max-md:text-sm ">Tezlik (km/h)</label>
+              <input id="tezlik" name="tezlik" type="text" class="w-full px-3 py-2 max-md:py-1 border border-bla2xl rounded-2xl" required>
+            </div>
+            <div class="space-y-2">
+              <label for="time" class="text-2xl max-lg:text-xl max-md:text-sm ">Yurish vaqti</label>
+              <input id="time" name="time" type="text" class="w-full px-3 py-2 max-md:py-1 border border-bla2xl rounded-2xl">
+            </div>
+            <div class="space-y-2">
+              <label for="narx" class="text-2xl max-lg:text-xl max-md:text-sm ">Narxini kiriting</label>
+              <input id="narx" name="narx" type="text" class="w-full px-3 py-2 max-md:py-1 border border-bla2xl rounded-2xl">
+            </div>
+            <button class="addBtn w-full mt-4 inline-flex items-center justify-center rounded-lg bg-gray-800 px-4 py-2 text-xl max-lg:text-lg max-md:text-sm font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+              Skuterni qo'shish
+            </button>
+          </form>
+        </section>
+
+        <section class="px-30 max-xl:px-20 max-lg:px-10 max-sm:px-5 container mx-auto mb-10">
+            <div  data-id="12345" class="products flex gap-10 justify-around flex-wrap ">
+                
+                <div id="1" class="product  w-70 h-[520px]  rounded-xl border border-[#EAEBED] hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
                     <div class="flex justify-between rounded-t-xl items-start py-3 px-2 bg-center bg-[#F0F1F5] bg-[url(./src/images/samakat.png)] bg-no-repeat h-50">
                         <button class="bg-red-500 text-white rounded-md px-1">ХИТ</button>
                         
@@ -177,141 +212,8 @@
                     </div>
                     <button data-id="product-1" class="bg-blue-500 add-to-cart py-3 mx-4.5 my-3 cursor-pointer text-white w-60 rounded-xl border-1 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition-all">Купить в 1 клик</button>
                 </div>
-                <div id="product-2" class="product  w-70 h-[520px]  rounded-xl border border-[#EAEBED] hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
-                    <div class="flex justify-between rounded-t-xl items-start py-3 px-2 bg-center bg-[#F0F1F5] bg-[url(./src/images/samakat.png)] bg-no-repeat h-50">
-                        <button class="bg-red-500 text-white rounded-md px-1">ХИТ</button>
-                        
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <div class="p-4">
-                        <h1 class="text-xl font-bold">Kugoo Kirin M4</h1>
-                        <div class="flex justify-between items-center gap-2 pt-5 ">
-                            <div class="">
-                                <div class="flex gap-2 pb-4">
-                                    <img src="./src/images/acumlator.svg" alt="">
-                                    <h3>2000 mAh</h3>
-                                </div>
-                                <div class="flex gap-2">
-                                    <img src="./src/images/charmoq.svg" alt="">
-                                    <h3>1,2 л.с.</h3>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex gap-2 pb-4">
-                                    <img src="./src/images/speedometer 1.svg" alt="">
-                                    <h3>60 км/ч</h3>
-                                </div>
-                                <div class="flex gap-2">
-                                    <img src="./src/images/timer 1.svg" alt="">
-                                    <h3>5 часов</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between items-center">
-                        <div>
-                            <h3 class="line-through">39 900 ₽</h3>
-                            <h2 class="text-xl font-bold">29 900 ₽</h2>
-                        </div>
-                        <div>
-                            <span class="border border-gray-300 rounded-[100%] p-3"><i class=" fas  fa-shopping-basket fa-xl"></i></span>
-                            <span class="border border-gray-300 rounded-[100%] p-3"><i class=" far fa-heart fa-xl"></i></span>
-                        </div>
-                    </div>
-                    <button data-id="product-2" class="bg-blue-500 add-to-cart py-3 mx-4.5 my-3 cursor-pointer text-white w-60 rounded-xl border-1 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition-all">Купить в 1 клик</button>
-                </div>
-                <div id="product-3" class="product  w-70 h-[520px]  rounded-xl border border-[#EAEBED] hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
-                    <div class="flex justify-between rounded-t-xl items-start py-3 px-2 bg-center bg-[#F0F1F5] bg-[url(./src/images/samakat.png)] bg-no-repeat h-50">
-                        <button class="bg-red-500 text-white rounded-md px-1">ХИТ</button>
-                        
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <div class="p-4">
-                        <h1 class="text-xl font-bold">Kugoo Kirin M4</h1>
-                        <div class="flex justify-between items-center gap-2 pt-5 ">
-                            <div class="">
-                                <div class="flex gap-2 pb-4">
-                                    <img src="./src/images/acumlator.svg" alt="">
-                                    <h3>2000 mAh</h3>
-                                </div>
-                                <div class="flex gap-2">
-                                    <img src="./src/images/charmoq.svg" alt="">
-                                    <h3>1,2 л.с.</h3>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex gap-2 pb-4">
-                                    <img src="./src/images/speedometer 1.svg" alt="">
-                                    <h3>60 км/ч</h3>
-                                </div>
-                                <div class="flex gap-2">
-                                    <img src="./src/images/timer 1.svg" alt="">
-                                    <h3>5 часов</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between items-center">
-                        <div>
-                            <h3 class="line-through">39 900 ₽</h3>
-                            <h2 class="text-xl font-bold">29 900 ₽</h2>
-                        </div>
-                        <div>
-                            <span class="border border-gray-300 rounded-[100%] p-3"><i class=" fas  fa-shopping-basket fa-xl"></i></span>
-                            <span class="border border-gray-300 rounded-[100%] p-3"><i class=" far fa-heart fa-xl"></i></span>
-                        </div>
-                    </div>
-                    <button data-id="product-3" class="bg-blue-500 add-to-cart py-3 mx-4.5 my-3 cursor-pointer text-white w-60 rounded-xl border-1 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition-all">Купить в 1 клик</button>
-                </div>
-                <div id="product-4" class="product  w-70 h-[520px]  rounded-xl border border-[#EAEBED] hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
-                    <div class="flex justify-between rounded-t-xl items-start py-3 px-2 bg-center bg-[#F0F1F5] bg-[url(./src/images/samakat.png)] bg-no-repeat h-50">
-                        <button class="bg-red-500 text-white rounded-md px-1">ХИТ</button>
-                        
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <div class="p-4">
-                        <h1 class="text-xl font-bold">Kugoo Kirin M4</h1>
-                        <div class="flex justify-between items-center gap-2 pt-5 ">
-                            <div class="">
-                                <div class="flex gap-2 pb-4">
-                                    <img src="./src/images/acumlator.svg" alt="">
-                                    <h3>2000 mAh</h3>
-                                </div>
-                                <div class="flex gap-2">
-                                    <img src="./src/images/charmoq.svg" alt="">
-                                    <h3>1,2 л.с.</h3>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex gap-2 pb-4">
-                                    <img src="./src/images/speedometer 1.svg" alt="">
-                                    <h3>60 км/ч</h3>
-                                </div>
-                                <div class="flex gap-2">
-                                    <img src="./src/images/timer 1.svg" alt="">
-                                    <h3>5 часов</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 flex justify-between items-center">
-                        <div>
-                            <h3 class="line-through">39 900 ₽</h3>
-                            <h2 class="text-xl font-bold">29 900 ₽</h2>
-                        </div>
-                        <div>
-                            <span class="border border-gray-300 rounded-[100%] p-3"><i class=" fas  fa-shopping-basket fa-xl"></i></span>
-                            <span class="border border-gray-300 rounded-[100%] p-3"><i class=" far fa-heart fa-xl"></i></span>
-                        </div>
-                    </div>
-                    <button data-id="product-4" class="bg-blue-500 add-to-cart py-3 mx-4.5 my-3 cursor-pointer text-white w-60 rounded-xl border-1 hover:border-blue-500 hover:bg-transparent hover:text-blue-500 transition-all">Купить в 1 клик</button>
-                </div>
                 
                 
-            </div>
-
-            <div id="saved-ids" class="max-w-150 h-50 bg-slate-300 p-10 rounded-2xl mt-4 text-xl font-medium mx-auto container"> 
-                <h1>Tanlangan productlar idilari shuyerda chiqadi</h1>
             </div>
         </section>
     </main>
