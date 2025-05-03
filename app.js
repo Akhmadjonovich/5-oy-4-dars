@@ -104,6 +104,10 @@ let products = [
 }
 ]
 
+if (localStorage.getItem("products")) {
+  products = JSON.parse(localStorage.getItem("products"));
+}
+
 let print = () => {
   productsWrap.innerHTML = ""
   products.map(p => {
@@ -114,12 +118,12 @@ let print = () => {
                         <i class="fas fa-balance-scale"></i>
                     </div>
                     <div class="p-4">
-                        <h1 class="text-xl font-bold">Kugoo Kirin M4</h1>
+                        <h1 class="text-xl font-bold">${p.title}</h1>
                         <div class="flex justify-between items-center gap-2 pt-5 ">
                             <div class="">
                                 <div class="flex gap-2 pb-4">
-                                    <img src="./src/images/acumlator.svg" alt="${p.title}">
-                                    <h3>${p.battery}</h3>
+                                    <img src="./src/images/acumlator.svg" alt="">
+                                    <h3>${p.battery} mAh</h3>
                                 </div>
                                 <div class="flex gap-2">
                                     <img src="./src/images/charmoq.svg" alt="">
@@ -129,11 +133,11 @@ let print = () => {
                             <div>
                                 <div class="flex gap-2 pb-4">
                                     <img src="./src/images/speedometer 1.svg" alt="">
-                                    <h3>${p.speed}</h3>
+                                    <h3>${p.speed} km/h</h3>
                                 </div>
                                 <div class="flex gap-2">
                                     <img src="./src/images/timer 1.svg" alt="">
-                                    <h3>${p.powerHours}</h3>
+                                    <h3>${p.powerHours} hours</h3>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +145,7 @@ let print = () => {
                     <div class="p-4 flex justify-between items-center">
                         <div>
                             
-                            <h2 class="text-xl font-bold">${p.price}</h2>
+                            <h2 class="text-xl font-bold">${p.price} USZ</h2>
                         </div>
                         <div>
                             <span class="border border-gray-300 rounded-[100%] p-3"><i class=" fas  fa-shopping-basket fa-xl"></i></span>
@@ -178,9 +182,12 @@ addbtn.addEventListener("click", (e) => {
     image: "./scuter.png"
   });
 
+  localStorage.setItem("products", JSON.stringify(products));
+
   print();
   form.reset(); 
 });
+
 
 
 
